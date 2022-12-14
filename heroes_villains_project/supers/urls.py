@@ -1,8 +1,16 @@
 from django.urls import path
-from super_types import views
-
+from . import views
 
 urlpatterns = [
-    path('', views.superType_list),
-    path('<int:pk>/', views.superType_detail),
+    path('', views.super_list),
+    path('<int:pk>/', views.super_detail),
 ]
+
+# from django.contrib import admin
+# from django.urls import path, include
+
+
+# urlpatterns = [
+#      path('admin/', admin.site.urls),
+#      path('api/supers/', include('supers.urls')),
+#  ]
